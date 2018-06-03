@@ -1,16 +1,17 @@
-**Compose-It**
+# ComposeIt
 ------------------------------
 
 Python tool for creating a docker-compose.yml file from an existing container
 
-**Usage**
+## Installing
 
-python3 Compose-It.py <Container Name or Id> 
+```bash
+pip install ComposeIt
+```
 
-***Requirements***
+## Usage
 
-* Python 3
-* pyyaml
-* docker
+```bash
+ComposeIt <container id or name>
+```
 
-pip3 install pyyaml docker
