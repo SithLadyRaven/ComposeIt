@@ -1,5 +1,5 @@
 # ComposeIt
-------------------------------
+[![PyPI version](https://badge.fury.io/py/ComposeIt.svg)](https://badge.fury.io/py/ComposeIt)
 
 Python tool for creating a docker-compose.yml file from an existing container
 
