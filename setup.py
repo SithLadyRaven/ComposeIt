@@ -12,7 +12,7 @@ setup(
     long_description_content_type="text/markdown",
     author='Kelsey Price',
     author_email='kelseylprice19@gmail.com',
-    url='https://github.com/k3lsey/ComposeIt',
+    url='https://github.com/kelsey19/ComposeIt',
     install_requires=['docker>=3.3.0', 'pyyaml>=3.12'],
     keywords='docker',
     entry_points = {
