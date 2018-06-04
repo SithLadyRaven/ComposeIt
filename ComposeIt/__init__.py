@@ -1,5 +1,3 @@
-import sys
-import logging
 import docker
 from argparse import ArgumentParser
 
