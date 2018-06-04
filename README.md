@@ -15,3 +15,8 @@ pip install ComposeIt
 ComposeIt <container id or name>
 ```
 
+## Options
+
+Option | Description | Default
+--- | --- | ---
+--socket, -s | docker socket | unix://var/run/docker.sock
