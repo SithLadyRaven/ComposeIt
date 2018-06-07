@@ -1,6 +1,6 @@
 # ComposeIt
 
-[![GitHub license](https://img.shields.io/github/license/kelsey19/ComposeIt.svg?style=social)](https://github.com/kelsey19/ComposeIt/blob/master/LICENSE)![PyPI - Python Version](https://img.shields.io/pypi/pyversions/ComposeIt.svg)[![PyPI version](https://badge.fury.io/py/ComposeIt.svg)](https://badge.fury.io/py/ComposeIt)
+[![GitHub license](https://img.shields.io/github/license/kelsey19/ComposeIt.svg?style=social)](https://github.com/kelsey19/ComposeIt/blob/master/LICENSE) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/ComposeIt.svg) [![PyPI version](https://badge.fury.io/py/ComposeIt.svg)](https://badge.fury.io/py/ComposeIt)
 
 Python tool for creating a docker-compose.yml file from an existing container
 
