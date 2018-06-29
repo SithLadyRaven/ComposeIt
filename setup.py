@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name='ComposeIt',
-    version=0.3,
+    version='0.3.2',
     author='Kelsey Price',
     author_email='kelseylprice19@gmail.com',
     description='Generate docker-compose file from existing containers',
