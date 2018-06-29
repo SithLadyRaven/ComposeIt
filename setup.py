@@ -2,7 +2,7 @@ from setuptools import setup
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
-    
+
 setup(
     name='ComposeIt',
     version=0.3,
@@ -14,8 +14,8 @@ setup(
     url='https://github.com/kelsey19/ComposeIt',
     packages=['ComposeIt'],
     install_requires=['docker>=3.3.0', 'pyyaml>=3.12'],
-    entry_points = {
-        'console_scripts' : ['ComposeIt = ComposeIt:main']
+    entry_points={
+        'console_scripts': ['ComposeIt = ComposeIt:main']
     },
     classifiers=(
         "Programming Language :: Python :: 3",
