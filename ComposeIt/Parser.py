@@ -8,8 +8,8 @@ COMPOSE_VERSION = '3'
 
 class InspectParser(object):
 
-    def __init__(self, inspect):
-        self.inspect = inspect
+    def __init__(self, inspect_results):
+        self.inspect_results = inspect_results
 
         yaml.add_representer(OrderedDict, self.represent_ordereddict)
 
@@ -26,25 +26,29 @@ class InspectParser(object):
         return yaml.nodes.MappingNode(u'tag:yaml.org,2002:map', value)
 
     def perform_parse(self):
-        config = self.inspect['Config']
-        host_config = self.inspect['HostConfig']
 
-        yml = OrderedDict()
-        service = OrderedDict()
         service_name = OrderedDict()
+        yml = OrderedDict()
 
-        for key, value in config.items():
-            current_option = 'Config' + '.' + key
-            if current_option in options:
-                options[current_option].process_option(value=value, yml=service)
+        for container in self.inspect_results:
+            config = container['Config']
+            host_config = container['HostConfig']
 
-        for key, value in host_config.items():
-            current_option = 'HostConfig' + '.' + key
-            if current_option in options:
-                options[current_option].process_option(value=value, yml=service)
+            service = OrderedDict()
+
+            for key, value in config.items():
+                current_option = 'Config' + '.' + key
+                if current_option in options:
+                    options[current_option].process_option(value=value, yml=service)
+
+            for key, value in host_config.items():
+                current_option = 'HostConfig' + '.' + key
+                if current_option in options:
+                    options[current_option].process_option(value=value, yml=service)
+
+            service_name[container['Name'][1:]] = service
 
         yml['version'] = COMPOSE_VERSION
-        service_name[self.inspect['Name'][1:]] = service
         yml['services'] = service_name
 
         yaml.dump(yml, sys.stdout, default_flow_style=False)

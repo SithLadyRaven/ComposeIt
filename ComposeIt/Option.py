@@ -1,4 +1,3 @@
-# noinspection PyBroadException
 class Option(object):
 
     def __init__(self, option, otype):
