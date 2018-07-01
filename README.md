@@ -9,7 +9,7 @@ Python tool for creating a docker-compose.yml file from an existing container
 docker run --rm -ti \
   -v /var/run/docker.sock:/var/run/docker.sock \
   kelsey19/composeit \
-  <container id or name>
+  <container id or name> <container id or name> ...
 ```
 
 ## Installing from source
@@ -26,7 +26,7 @@ pip3 install ComposeIt
 ## Usage
 
 ```bash
-ComposeIt <container id or name>
+ComposeIt <container id or name> <container id or name> ...
 ```
 
 ## Options
