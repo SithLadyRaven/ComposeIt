@@ -43,7 +43,7 @@ class Option(object):
                 self.process_generic(yml=yml, option=' '.join(value))
             elif self.type == 'restart':
                 self.process_generic(yml=yml, option=value['Name'])
-        except:
+        except TypeError:
             pass
 
 

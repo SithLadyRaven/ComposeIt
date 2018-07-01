@@ -3,7 +3,6 @@ from argparse import ArgumentParser
 
 
 class ComposeIt(object):
-    # noinspection PyBroadException
     def __init__(self, container_list, socket):
         from ComposeIt import Parser
 
@@ -15,7 +14,7 @@ class ComposeIt(object):
                 inspect_results.append(inspect)
             self.parser = Parser.InspectParser(inspect_results)
             self.parser.perform_parse()
-        except NameError:
+        except docker.errors.NotFound:
             print("Container not found")
 
 
