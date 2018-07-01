@@ -5,7 +5,7 @@ ARG VCS_REF
 
 LABEL org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.name="ComposeIt" \
-      org.label-schema.description="Create docker-compose.yml from existing containers"
+      org.label-schema.description="Create docker-compose.yml from existing containers" \
       org.label-schema.vcs-url="https://github.com/kelsey19/ComposeIt" \
       org.label-schema.vcs-ref=$VCS_REF \
       org.label-schema.schema-version="1.0"
