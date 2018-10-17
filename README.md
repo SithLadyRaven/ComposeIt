@@ -1,7 +1,7 @@
 # ComposeIt
-[![](https://images.microbadger.com/badges/image/kelsey19/composeit.svg)](https://microbadger.com/images/kelsey19/composeit) [![](https://images.microbadger.com/badges/commit/kelsey19/composeit:latest.svg)](https://microbadger.com/images/kelsey19/composeit:latest)
+[![](https://images.microbadger.com/badges/image/sithladyraven/composeit.svg)](https://microbadger.com/images/sithladyraven/composeit) [![](https://images.microbadger.com/badges/commit/sithladyraven/composeit:latest.svg)](https://microbadger.com/images/sithladyraven/composeit:latest)
 
-[![GitHub license](https://img.shields.io/github/license/kelsey19/ComposeIt.svg?style=social)](https://github.com/kelsey19/ComposeIt/blob/master/LICENSE) [![PyPI version](https://badge.fury.io/py/ComposeIt.svg)](https://badge.fury.io/py/ComposeIt)
+[![GitHub license](https://img.shields.io/github/license/sithladyraven/ComposeIt.svg?style=social)](https://github.com/sithladyraven/ComposeIt/blob/master/LICENSE) [![PyPI version](https://badge.fury.io/py/ComposeIt.svg)](https://badge.fury.io/py/ComposeIt)
 
 Python tool for creating a docker-compose.yml file from an existing container
 
@@ -9,7 +9,7 @@ Python tool for creating a docker-compose.yml file from an existing container
 ```bash
 docker run --rm -ti \
   -v /var/run/docker.sock:/var/run/docker.sock \
-  kelsey19/composeit \
+  sithladyraven/composeit \
   <container id or name> <container id or name> ...
 ```
 
